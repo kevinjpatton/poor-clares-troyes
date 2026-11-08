@@ -1,0 +1,6 @@
+# The saved design conversation is submitted to the instructor, never published.
+*.jsonl
+
+# Local tooling
+.claude/
+.vercel/

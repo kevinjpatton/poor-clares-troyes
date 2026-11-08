@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poor Clares of Troyes · Perpetual Adoration</title>
+  <meta name="description" content="The Poor Clares of Perpetual Adoration, Monastère Notre-Dame des Anges, Troyes, France. Les Clarisses de l'Adoration Perpétuelle de Troyes.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Top bar ===== -->
+  <header class="topbar" id="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#home">
+        <span class="brand__mark"><i class="fa-solid fa-sun"></i></span>
+        <span class="brand__text">
+          <span class="brand__name" data-i18n="brand.name">Poor Clares of Troyes</span>
+          <span class="brand__sub" data-i18n="brand.sub">Perpetual Adoration</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#home" data-i18n="nav.home">Adoration</a>
+        <a href="#who" data-i18n="nav.who">Who we are</a>
+        <a href="#work" data-i18n="nav.work">Our work</a>
+        <a href="#shop" data-i18n="nav.shop">Shop</a>
+        <a href="#news" data-i18n="nav.news">News</a>
+        <a href="#media" data-i18n="nav.media">Gallery</a>
+        <a href="#visit" data-i18n="nav.visit">Visit</a>
+        <a href="#give" class="nav__give" data-i18n="nav.give">Donate</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="lang" type="button" data-lang-toggle aria-label="Change language">
+          <span class="lang__opt" data-lang-opt="en">EN</span>
+          <span class="lang__sep">/</span>
+          <span class="lang__opt" data-lang-opt="fr">FR</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">
+          <i class="fa-solid fa-bars"></i>
+          <span class="sr-only" data-i18n="nav.menu">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Home / Adoration ===== -->
+    <section class="hero" id="home">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Monastère Notre-Dame des Anges · Troyes, France</p>
+          <h1 class="hero__title" data-i18n="hero.title">Thanks be to God through Jesus in the Most Blessed Sacrament!</h1>
+
+          <div class="clock card card--glow" aria-live="polite">
+            <div class="clock__label"><i class="fa-solid fa-clock"></i> <span data-i18n="clock.label">Right now in Troyes</span></div>
+            <p class="clock__time" id="clockTime"></p>
+            <p class="clock__line" data-i18n="clock.line"></p>
+          </div>
+
+          <p class="hero__lead" data-i18n="hero.welcome"></p>
+          <p class="hero__charism" data-i18n="hero.charism"></p>
+
+          <div class="hero__ctas">
+            <a class="btn btn--gold" href="#visit"><i class="fa-solid fa-church"></i> <span data-i18n="hero.ctaVisit">Visit the chapel</span></a>
+            <a class="btn btn--ghost" href="#give"><i class="fa-solid fa-hand-holding-heart"></i> <span data-i18n="hero.ctaGive">Support the sisters</span></a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <figure class="hero__photo hero__photo--main">
+            <img src="assets/images/adoration-kneeling.jpg" alt="A Poor Clare sister kneeling in adoration before the Blessed Sacrament" width="1200" height="1600">
+          </figure>
+          <figure class="hero__photo hero__photo--inset">
+            <img src="assets/images/cross-and-monstrance.jpg" alt="The San Damiano cross and the monstrance" width="1200" height="900">
+          </figure>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="card watch">
+          <div class="watch__icon"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i></div>
+          <div>
+            <h2 class="watch__title" data-i18n="hero.watch.title">Keeping watch, night and day</h2>
+            <p data-i18n="hero.watch.text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Who we are ===== -->
+    <section class="section" id="who">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker" data-i18n="who.kicker">Who we are</p>
+          <h2 class="section__title" data-i18n="who.title">A contemplative branch of the Franciscan family</h2>
+        </header>
+
+        <div class="split">
+          <figure class="photo photo--tall">
+            <img src="assets/images/sisters-group.jpg" alt="The sisters of the Troyes community together" loading="lazy">
+          </figure>
+          <article class="card prose">
+            <h3><i class="fa-solid fa-book-open"></i> <span data-i18n="who.story.title">Our story</span></h3>
+            <div data-i18n="who.story.text"></div>
+          </article>
+        </div>
+
+        <div class="split split--rev">
+          <article class="card prose">
+            <h3><i class="fa-solid fa-people-group"></i> <span data-i18n="who.community.title">Our community</span></h3>
+            <p class="quote" data-i18n="who.community.quote"></p>
+            <div data-i18n="who.community.text"></div>
+          </article>
+          <div class="stack">
+            <figure class="photo">
+              <img src="assets/images/pear-tree-community.jpg" alt="The community gathered around the newly planted pear tree" loading="lazy">
+            </figure>
+            <p class="caption-card"><i class="fa-solid fa-seedling"></i> <span data-i18n="who.community.pear"></span></p>
+          </div>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card prose">
+            <figure class="card__img"><img src="assets/images/monstrance-throne.jpg" alt="The monstrance exposed in the chapel" loading="lazy"></figure>
+            <h3><i class="fa-solid fa-dove"></i> <span data-i18n="who.spirit.title">Our spiritual life</span></h3>
+            <div data-i18n="who.spirit.text"></div>
+          </article>
+          <article class="card prose">
+            <figure class="card__img"><img src="assets/images/cloister-garden.jpg" alt="The cloister garden of the Monastery" loading="lazy"></figure>
+            <h3><i class="fa-solid fa-place-of-worship"></i> <span data-i18n="who.monastery.title">Our monastery</span></h3>
+            <div data-i18n="who.monastery.text"></div>
+            <a class="link" href="#media"><span data-i18n="who.monastery.link">See the restoration photos</span> <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <div class="stack">
+            <article class="card prose card--gold">
+              <h3><i class="fa-solid fa-heart"></i> <span data-i18n="who.vocations.title">Vocations</span></h3>
+              <figure class="card__img"><img src="assets/images/sisters-garden.jpg" alt="Three sisters smiling in the garden" loading="lazy"></figure>
+              <p data-i18n="who.vocations.text"></p>
+              <a class="btn btn--gold btn--small" id="vocationsLink" href="#"><i class="fa-solid fa-envelope"></i> <span data-i18n="who.vocations.cta">Write to us about vocations</span></a>
+            </article>
+            <article class="card prose card--quiet">
+              <div class="memorial">
+                <img src="assets/images/chaplain.jpg" alt="Mgr Bernard Savourat with the sisters" loading="lazy">
+                <div>
+                  <h3 data-i18n="who.chaplain.title">In memory of Mgr Bernard Savourat</h3>
+                  <p data-i18n="who.chaplain.text"></p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Our work ===== -->
+    <section class="section section--alt" id="work">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker" data-i18n="work.kicker">Our work</p>
+          <h2 class="section__title" data-i18n="work.title">Prayer and work</h2>
+        </header>
+
+        <blockquote class="bigquote">
+          <p data-i18n="work.quote"></p>
+          <cite data-i18n="work.quoteSource">Constitutions, Article 148</cite>
+        </blockquote>
+
+        <div class="grid grid--3">
+          <article class="card prose">
+            <figure class="card__img"><img src="assets/images/sewing-machine.jpg" alt="A sister sewing at the machine" loading="lazy"></figure>
+            <h3><i class="fa-solid fa-scissors"></i> <span data-i18n="work.sewing.title">The sewing room</span></h3>
+            <p data-i18n="work.sewing.text"></p>
+          </article>
+          <article class="card prose">
+            <figure class="card__img"><img src="assets/images/garden-vegetables.jpg" alt="A sister working in the vegetable garden" loading="lazy"></figure>
+            <h3><i class="fa-solid fa-carrot"></i> <span data-i18n="work.garden.title">The garden</span></h3>
+            <p data-i18n="work.garden.text"></p>
+          </article>
+          <article class="card prose">
+            <figure class="card__img"><img src="assets/images/kitchen.jpg" alt="Two sisters making jam in the kitchen" loading="lazy"></figure>
+            <h3><i class="fa-solid fa-broom"></i> <span data-i18n="work.house.title">The daily work of the house</span></h3>
+            <p data-i18n="work.house.text"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Shop ===== -->
+    <section class="section" id="shop">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker" data-i18n="shop.kicker">Shop</p>
+          <h2 class="section__title" data-i18n="shop.title">Support the sisters with a purchase</h2>
+        </header>
+
+        <div class="shop-intro card">
+          <img src="assets/images/violin-organ.jpg" alt="Sister Marie Antoinette playing the violin beside the organist" loading="lazy">
+          <div>
+            <h3><i class="fa-solid fa-music"></i> <span data-i18n="shop.cds.title">Violin CDs to help restore our Monastery</span></h3>
+            <p data-i18n="shop.cds.text"></p>
+          </div>
+        </div>
+
+        <div class="grid grid--3 cds">
+          <article class="card cd">
+            <img class="cd__cover" src="assets/images/cd1-vivaldi.jpg" alt="Cover of CD1: Vivaldi, The Four Seasons" loading="lazy">
+            <h3 class="cd__title" data-i18n="cd1.title">CD1</h3>
+            <p class="cd__desc" data-i18n="cd1.desc"></p>
+            <p class="cd__price" data-i18n="cd.price">20 € + 1 € postage</p>
+            <a class="btn btn--paypal" data-paypal="cd1" href="#" target="_blank" rel="noopener"></a>
+          </article>
+          <article class="card cd">
+            <img class="cd__cover" src="assets/images/cd2-bach-handel.jpg" alt="Cover of CD2: Bach and Handel" loading="lazy">
+            <h3 class="cd__title" data-i18n="cd2.title">CD2</h3>
+            <p class="cd__desc" data-i18n="cd2.desc"></p>
+            <p class="cd__price" data-i18n="cd.price">20 € + 1 € postage</p>
+            <a class="btn btn--paypal" data-paypal="cd2" href="#" target="_blank" rel="noopener"></a>
+          </article>
+          <article class="card cd cd--soon">
+            <span class="badge badge--teal" data-i18n="cd.soon">Coming soon</span>
+            <img class="cd__cover" src="assets/images/cd3-thais.jpg" alt="Cover of CD3: Saint Thaïs" loading="lazy">
+            <h3 class="cd__title" data-i18n="cd3.title">CD3</h3>
+            <p class="cd__desc" data-i18n="cd3.desc"></p>
+          </article>
+        </div>
+
+        <div class="card qty">
+          <h3 class="qty__title"><i class="fa-solid fa-layer-group"></i> <span data-i18n="cd.qtyTitle">Ordering several?</span></h3>
+          <table class="qty__table">
+            <thead><tr><th data-i18n="cd.qty">Quantity</th><th data-i18n="cd.total">Price</th></tr></thead>
+            <tbody id="qtyBody"></tbody>
+          </table>
+        </div>
+
+        <div class="split albs">
+          <figure class="photo">
+            <img src="assets/images/sewing-cutting.jpg" alt="A sister cutting white alb fabric in the sewing room" loading="lazy">
+          </figure>
+          <article class="card prose">
+            <h3><i class="fa-solid fa-shirt"></i> <span data-i18n="shop.albs.title">Albs</span></h3>
+            <div data-i18n="shop.albs.text"></div>
+            <div class="soon">
+              <span class="badge badge--coral"><i class="fa-solid fa-hourglass-half"></i> <span data-i18n="shop.albs.soon">Ordering coming soon</span></span>
+              <p data-i18n="shop.albs.soonText"></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== News ===== -->
+    <section class="section section--alt" id="news">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker" data-i18n="news.kicker">News</p>
+          <h2 class="section__title" data-i18n="news.title">News from the Monastery</h2>
+        </header>
+
+        <div class="news" id="newsList"></div>
+
+        <div class="card letter">
+          <div class="letter__intro">
+            <h3><i class="fa-solid fa-envelope-open-text"></i> <span data-i18n="news.letter.title">Our newsletter</span></h3>
+            <p data-i18n="news.letter.text"></p>
+            <a class="btn btn--gold btn--small" id="subscribeLink" href="#"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="news.letter.subscribe">Subscribe by email</span></a>
+          </div>
+          <div class="letter__archive">
+            <h4 data-i18n="news.letter.archive">Newsletter archive (PDF)</h4>
+            <p class="muted small" data-i18n="news.letter.note"></p>
+            <ul class="pdfs" id="pdfList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Gallery & media ===== -->
+    <section class="section" id="media">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker" data-i18n="media.kicker">Gallery</p>
+          <h2 class="section__title" data-i18n="media.title">Photos, music and memories</h2>
+        </header>
+
+        <div class="card">
+          <h3 class="card__title"><i class="fa-solid fa-trowel-bricks"></i> <span data-i18n="media.gallery.title">The restoration of our Monastery</span></h3>
+          <p data-i18n="media.gallery.text"></p>
+          <div class="gallery" id="gallery"></div>
+        </div>
+
+        <div class="grid grid--3 media-row">
+          <article class="card audio">
+            <img class="audio__art" src="assets/images/sister-violinist.jpg" alt="" loading="lazy">
+            <h3><i class="fa-solid fa-headphones"></i> <span data-i18n="media.audio.title">À toi Dieu</span></h3>
+            <p data-i18n="media.audio.text"></p>
+            <div class="player">
+              <button class="player__btn" id="playBtn" type="button" aria-label="Play">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <div class="player__bar" id="playBar"><span id="playFill"></span></div>
+              <span class="player__time" id="playTime">0:00 / 1:46</span>
+            </div>
+            <audio id="audio" src="assets/audio/a-toi-dieu.mp3" preload="none"></audio>
+          </article>
+
+          <article class="card prose">
+            <figure class="card__img"><img src="assets/images/roof-restoration.jpg" alt="The monastery roofs during restoration" loading="lazy"></figure>
+            <h3><i class="fa-solid fa-film"></i> <span data-i18n="media.video.title">Ten years of renovations</span></h3>
+            <p data-i18n="media.video.text"></p>
+            <a class="link" href="assets/pdf/en/2018-easter.pdf" id="easterLink" target="_blank" rel="noopener"><span data-i18n="media.video.cta">Read the Easter 2018 newsletter</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="card prose">
+            <h3><i class="fa-solid fa-fire-flame-curved"></i> <span data-i18n="media.nd.title">Notre-Dame Cathedral in Paris</span></h3>
+            <div data-i18n="media.nd.text"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Visit & contact ===== -->
+    <section class="section section--alt" id="visit">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker" data-i18n="visit.kicker">Visit & contact</p>
+          <h2 class="section__title" data-i18n="visit.title">Come and visit us!</h2>
+          <p class="section__lead" data-i18n="visit.text"></p>
+        </header>
+
+        <div class="grid grid--2">
+          <div class="stack">
+            <article class="card contact">
+              <ul class="contact__list">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                    <span class="label" data-i18n="visit.address">Address</span>
+                    <address>Monastère des Clarisses<br>Notre-Dame des Anges<br>26, rue Mitantier<br>F-10000 Troyes, France</address>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <div>
+                    <span class="label" data-i18n="visit.phone">Telephone</span>
+                    <a id="phoneLink" href="#"></a>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <div>
+                    <span class="label" data-i18n="visit.email">Email</span>
+                    <a id="emailLink" href="#"></a>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-language"></i>
+                  <div><span data-i18n="visit.languages">We speak French and English!</span></div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="card times">
+              <h3><i class="fa-solid fa-bell"></i> <span data-i18n="visit.times.title">Mass, prayer and Adoration</span></h3>
+              <dl class="times__list" id="timesList"></dl>
+              <p class="muted small" data-i18n="visit.times.note"></p>
+            </article>
+          </div>
+
+          <div class="stack">
+            <div class="map card">
+              <iframe id="mapFrame" title="Map: 26 rue Mitantier, Troyes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <a class="link map__link" id="mapLink" href="#" target="_blank" rel="noopener"><span data-i18n="visit.mapLink">Open in Google Maps</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <figure class="photo">
+              <img src="assets/images/community-cloister.jpg" alt="The sisters standing in front of the cloister" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Donate ===== -->
+    <section class="section give" id="give">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker" data-i18n="give.kicker">Donate</p>
+          <h2 class="section__title" data-i18n="give.title">Help us continue our vocation</h2>
+          <p class="section__lead" data-i18n="give.text"></p>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card card--glow give__main">
+            <h3><i class="fa-solid fa-hand-holding-heart"></i> <span data-i18n="give.online.title">Online, through the Fondation des Monastères</span></h3>
+            <p class="muted" data-i18n="give.online.note"></p>
+            <a class="btn btn--gold btn--big" id="donateLink" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-heart"></i> <span data-i18n="give.cta">Donate online</span> <i class="fa-solid fa-arrow-up-right-from-square small"></i></a>
+            <h4 data-i18n="give.steps.title">How to direct your gift to us</h4>
+            <ol class="steps" id="donateSteps"></ol>
+          </article>
+
+          <div class="stack">
+            <article class="card prose">
+              <h3><i class="fa-solid fa-building-columns"></i> <span data-i18n="give.other.title">By bank transfer or check</span></h3>
+              <p data-i18n="give.other.text"></p>
+              <a class="btn btn--ghost btn--small" id="giveEmailLink" href="#"><i class="fa-solid fa-envelope"></i> <span data-i18n="give.other.cta">Email the sisters</span></a>
+            </article>
+            <article class="card prose card--quiet">
+              <h3><i class="fa-solid fa-circle-info"></i> <span data-i18n="give.fdm.title">About the Fondation des Monastères</span></h3>
+              <p data-i18n="give.fdm.text"></p>
+            </article>
+            <p class="thanks" data-i18n="give.thanks"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <p class="footer__name" data-i18n="footer.name">Monastère des Clarisses · Notre-Dame des Anges</p>
+        <p>26, rue Mitantier · F-10000 Troyes · France</p>
+        <p><a id="footerPhone" href="#"></a> · <a id="footerEmail" href="#"></a></p>
+      </div>
+      <div class="footer__right">
+        <p class="footer__motto" data-i18n="footer.motto">Adoremus in aeternum!</p>
+        <button class="lang lang--footer" type="button" data-lang-toggle aria-label="Change language">
+          <span class="lang__opt" data-lang-opt="en">EN</span>
+          <span class="lang__sep">/</span>
+          <span class="lang__opt" data-lang-opt="fr">FR</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true">
+    <button class="lightbox__btn lightbox__close" id="lbClose" type="button"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox__btn lightbox__prev" id="lbPrev" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+    <figure class="lightbox__fig">
+      <img id="lbImg" src="" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__next" id="lbNext" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <script src="data/content.js"></script>
+  <script src="data/news.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
